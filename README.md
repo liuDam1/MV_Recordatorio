@@ -6,6 +6,8 @@
   + [Mi aplicación](#mi-aplicación)
     + [Caso de uso](#caso-de-uso)
     + [Requisito Funcionales y No Funcionales](#requisito-funcionales-y-no-funcionales)
++ [Diseño](#diseño)
+    + [GUI](#gui)
 ---
 ## Contecto de la aplicación
 ### Problema del mundo real
@@ -49,3 +51,5 @@ Además los datos no comparten la misma en diferentes dispositivos.
 
 ## Diseño
 ### GUI
+<img src="/Multimedia/InterfazUsuario.jpg">
+
