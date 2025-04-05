@@ -53,3 +53,15 @@ Además los datos no comparten la misma en diferentes dispositivos.
 ### GUI
 <img src="/Multimedia/InterfazUsuario.jpg">
 
++ Se inicia el sesión nombre y la contraseña si existe inicia sesión si no se crea una cuenta.
+
++ Al entrar vemos que encima pone el nombre del usuario y la barra de menu, tenemos un RecycleView donde mustra todo los recordatorios creadas y un boton de agregar recordatorio.
+
++ Cuando se le da click en el boton de agregar recordatorio se abre un formulario donde se puede crear un recordatorio con el titulo, descripcion, fecha y hora. Tambien se puede elegir si es periodico o no.
+
++ Para eliminar o cambiar un recordatorio debemos dar click en el recordatorio y se abrira un formulario con los datos del recordatorio y podremos cambiarlos o eliminarlos.
+
+<img src="/Multimedia/DiagramaNavegacion.png">
+
+### Arquitectura
+
