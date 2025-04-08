@@ -8,7 +8,10 @@
     + [Requisito Funcionales y No Funcionales](#requisito-funcionales-y-no-funcionales)
 + [Diseño](#diseño)
     + [GUI](#gui)
----
+    + [Arquitectura](#arquitectura)
+        + [Despliegue](#despliegue)
+
+
 ## Contecto de la aplicación
 ### Problema del mundo real
 Los aplicaciones de hoy en dia por lo visto solo es anotar texto y marcarlo en el calendario como aviso. Pero no puede avisarte como un alrma o una notificación. 
@@ -28,18 +31,15 @@ Además los datos no comparten la misma en diferentes dispositivos.
 + **Usuario:** Deberá registrarse para poder usar la aplicación. Así se podrá guardar los recordatorios y acceder a ellos desde cualquier dispositivo de la misma cuenta.
 
 #### Caso de uso
-+ **Registro de usuario:** El usuario se registra con email y contraseña para crear una cuenta.
 + **Inicio de sesión:** El usuario inicia sesión en la aplicación con sus credenciales.
 + **Crear recordatorio:** El usuario puede crear un nuevo recordatorio indicando título, descripción, fecha y hora. Puede ser periódico o único.
 + **Editar recordatorio:** El usuario puede modificar la información de un recordatorio existente.
 + **Eliminar recordatorio:** El usuario puede borrar un recordatorio que ya no necesita.
 + **Recibir notificaciones:** El sistema envía notificaciones y/o alarmas configuradas (ej: 3 días antes, 1 hora antes).
 + **Acceso a base de datos:** Los datos del usuario se guardan en una base de datos, permitiendo su acceso desde distintos dispositivos.
-+ **Cerrar sesión:** El usuario puede cerrar su sesión en la aplicación.
 
 #### Requisito Funcionales y No Funcionales
 + Funcionales:
-    + Registro e inicio de sesión de usuario.
     + Crear, editar y eliminar recordatorios.
     + Recibir notificaciones y alarmas según la fecha y configuración del recordatorio.
     + Base de datos para almacenar los recordatorios y datos del usuario.
@@ -51,9 +51,7 @@ Además los datos no comparten la misma en diferentes dispositivos.
 
 ## Diseño
 ### GUI
-<img src="/Multimedia/InterfazUsuario.jpg">
-
-+ Se inicia el sesión nombre y la contraseña si existe inicia sesión si no se crea una cuenta.
+<img src="/Multimedia/InterfazUsuario.png">
 
 + Al entrar vemos que encima pone el nombre del usuario y la barra de menu, tenemos un RecycleView donde mustra todo los recordatorios creadas y un boton de agregar recordatorio.
 
@@ -61,7 +59,7 @@ Además los datos no comparten la misma en diferentes dispositivos.
 
 + Para eliminar o cambiar un recordatorio debemos dar click en el recordatorio y se abrira un formulario con los datos del recordatorio y podremos cambiarlos o eliminarlos.
 
-<img src="/Multimedia/DiagramaNavegacion.png">
-
 ### Arquitectura
+#### Despliegue
+<img src="/Multimedia/DiagramaDespliegue.png">
 
