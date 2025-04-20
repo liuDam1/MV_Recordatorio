@@ -63,3 +63,10 @@ Además los datos no comparten la misma en diferentes dispositivos.
 #### Despliegue
 <img src="/Multimedia/DiagramaDespliegue.png">
 
+### Plan de Pruebas
++ Verificar que el usuario puede crear un recordatorio con éxito.
++ Verificar que el usuario puede editar un recordatorio existente con éxito.
++ Verificar que el usuario puede eliminar un recordatorio existente con éxito.
++ Verificar que el usuario pude modificar los datos de un recordatorio existente con éxito.
++ Verificar que el sistema envía notificaciones y alarmas según la configuración del recordatorio.
++ Sise implementa, verificar que se puede asignar como importante un recordatorio y que se muestra en otro color y este arriba de los otros.
