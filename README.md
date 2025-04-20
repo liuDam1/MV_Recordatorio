@@ -60,9 +60,26 @@ Además los datos no comparten la misma en diferentes dispositivos.
 
 + Para eliminar o cambiar un recordatorio debemos dar click en el recordatorio y se abrira un formulario con los datos del recordatorio y podremos cambiarlos o eliminarlos.
 
+#### Diagrama de Navegación
+```mermaid
+graph TD
+    A[Inicio] --> B[Lista de Recordatorios]
+
+    B --> C[Crear Recordatorio]
+    B --> D[Editar Recordatorio]
+    B --> E[Configuración]
+    B --> F[Cerrar Sesión]
+
+    C -->|Guardar / Cancelar| B
+    D -->|Guardar / Eliminar / Cancelar| B
+    E -->|Volver| B
+    F --> A
+```
+
 ### Arquitectura
 #### Despliegue
 <img src="/Multimedia/DiagramaDespliegue.png">
+
 
 ### Plan de Pruebas
 + Verificar que el usuario puede crear un recordatorio con éxito.
