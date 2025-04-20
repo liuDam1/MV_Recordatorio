@@ -10,6 +10,7 @@
     + [GUI](#gui)
     + [Arquitectura](#arquitectura)
         + [Despliegue](#despliegue)
++ [Plan de Pruebas](#plan-de-pruebas)
 
 
 ## Contecto de la aplicación
