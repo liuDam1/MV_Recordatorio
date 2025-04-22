@@ -77,7 +77,7 @@ graph TD
 ```
 
 ### Arquitectura
-#### Despliegue
+#### Diagrama de Despliegue
 <img src="/Multimedia/DiagramaDespliegue.png">
 
 
