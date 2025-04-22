@@ -71,7 +71,7 @@ graph TD
     B --> F[Cerrar Sesión]
 
     C -->|Guardar / Cancelar| B
-    D -->|Guardar / Eliminar / Cancelar| B
+    D -->|Eliminar / Modificar / Cancelar| B
     E -->|Volver| B
     F --> A
 ```
