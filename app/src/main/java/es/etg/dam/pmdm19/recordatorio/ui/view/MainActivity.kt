@@ -1,10 +1,9 @@
-package es.etg.dam.pmdm19.recordatorio
+package es.etg.dam.pmdm19.recordatorio.ui.view
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import es.etg.dam.pmdm19.recordatorio.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
