@@ -20,10 +20,10 @@ Los aplicaciones de hoy en dia por lo visto solo es anotar texto y marcarlo en e
 Además los datos no comparten la misma en diferentes dispositivos.
 
 ### Aplicaciones existentes
-+ Evernote: Complejo, con funciones innecesarias para usuarios básicos.
-+ Google Keep: Sencillo pero con organización limitada.
-+ Notion: Potente pero con curva de aprendizaje alta.
-+ Apple Notes: Solo para ecosistema Apple.
++ **Evernote:** Complejo, con funciones innecesarias para usuarios básicos.
++ **Google Keep:** Sencillo pero con organización limitada.
++ **Notion:** Potente pero con curva de aprendizaje alta.
++ **Apple Notes:** Solo para ecosistema Apple.
 
 ### Mi aplicación
 + **Simple y fácil de usar:** Interfaz simple y intuitiva para que los usuarios puedan crear y gestionar recordatorios de manera rápida y sencilla.
@@ -40,15 +40,21 @@ Además los datos no comparten la misma en diferentes dispositivos.
 + **Acceso a base de datos:** Los datos del usuario se guardan en una base de datos, permitiendo su acceso desde distintos dispositivos.
 
 #### Requisito Funcionales y No Funcionales
-+ Funcionales:
++ **Funcionales:**
     + Crear, editar y eliminar recordatorios.
-    + Recibir notificaciones y alarmas según la fecha y configuración del recordatorio.
-    + Base de datos para almacenar los recordatorios y datos del usuario.
+    + Notificaciones y alarmas de la fecha y configuración del recordatorio.
 
-+ No funcionales:
-    + Interfaz amigable y accesible.
-    + Seguridad en el manejo de datos del usuario.
-    + Disponibilidad multiplataforma.
++ **No funcionales:**
+    + Eficiencia
+        + Cargar y mostrar recordatorios de manera fluida.
+        + Margen de error en notificación y alarma entre 1 min.
+    + Escalabilidad
+        + Base de dato soporta +1000 datos.
+    + Acesibilidad
+        + Tamaño de fuente adaptable.
+    + Usabilidad
+        + Interfaz simple y fácil de usar.
+        + Manual de usuario estructurado adecuadamente.
 
 ## Diseño
 ### GUI
@@ -67,12 +73,10 @@ graph TD
 
     B --> C[Crear Recordatorio]
     B --> D[Editar Recordatorio]
-    B --> E[Configuración]
     B --> F[Cerrar Sesión]
 
     C -->|Guardar / Cancelar| B
     D -->|Eliminar / Modificar / Cancelar| B
-    E -->|Volver| B
     F --> A
 ```
 
@@ -80,11 +84,11 @@ graph TD
 #### Diagrama de Despliegue
 <img src="/Multimedia/DiagramaDespliegue.png">
 
+>Api : https://www.abstractapi.com/api/time-date-timezone-api
 
 ### Plan de Pruebas
-+ Verificar que el usuario puede crear un recordatorio con éxito.
-+ Verificar que el usuario puede editar un recordatorio existente con éxito.
-+ Verificar que el usuario puede eliminar un recordatorio existente con éxito.
-+ Verificar que el usuario pude modificar los datos de un recordatorio existente con éxito.
-+ Verificar que el sistema envía notificaciones y alarmas según la configuración del recordatorio.
-+ Sise implementa, verificar que se puede asignar como importante un recordatorio y que se muestra en otro color y este arriba de los otros.
++ Crear un recordatorio.
++ Editar un recordatorio.
++ Eliminar un recordatorio.
++ Los recordatorios se guardan en la base de datos.
++ Al llegar al tiempo la alarma se activa.
