@@ -65,6 +65,15 @@ Además los datos no comparten la misma en diferentes dispositivos.
 + Cuando se le da click en el boton de agregar recordatorio se abre un formulario donde se puede crear un recordatorio con el titulo, descripcion, fecha y hora. Tambien se puede elegir si es periodico o no.
 
 + Para eliminar o cambiar un recordatorio debemos dar click en el recordatorio y se abrira un formulario con los datos del recordatorio y podremos cambiarlos o eliminarlos.
+### UX
+La Experiencia de Usuario (UX) en MV_Recordatorio se centra en cómo los usuarios interactúan con la aplicación para gestionar sus recordatorios, desde la primera vez que la abren hasta el uso recurrente. El diseño UX esta garantizada que las tareas principales (crear, editar y recibir recordatorios) sean intuitivas, eficientes y satisfactorias.
+
+#### Principios UX aplicados
+- **Simplicidad:** Interfaz minimalista con solo las funciones esenciales
+- **Consistencia:** Patrones de diseño familiares (iconos reconocibles) 
+- **Feedback inmediato:** Confirmaciones visuales al realizar acciones
+- **Accesibilidad:** Tamaño de texto adaptable y buen contraste
+- **Eficiencia:** Flujos cortos para acciones frecuentes (ej: crear recordatorio en 3 pasos)
 
 #### Diagrama de Navegación
 ```mermaid
