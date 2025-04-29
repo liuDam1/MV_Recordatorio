@@ -8,6 +8,7 @@
     + [Requisito Funcionales y No Funcionales](#requisito-funcionales-y-no-funcionales)
 + [Diseño](#diseño)
     + [GUI](#gui)
+    + [UX](#ux)
     + [Arquitectura](#arquitectura)
         + [Despliegue](#despliegue)
 + [Plan de Pruebas](#plan-de-pruebas)
